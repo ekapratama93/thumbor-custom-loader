@@ -14,7 +14,7 @@ def read(fname):
 
 
 setup(
-    name="thumbor_custom",
+    name="thumbor_custom_loader",
     version="0.0.1",
     author="ekapratama93",
     description=(
