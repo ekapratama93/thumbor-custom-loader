@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+preggy = "*"
+pytest = "*"
+pylint = "*"
+flake8 = "*"
+coverage = "*"
+pytest-cov = "*"
+mock = "*"
+pyssim = ">=0.4.0,<1.0.0"
+
+[packages]
+thumbor = "==7.0.0a5"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
