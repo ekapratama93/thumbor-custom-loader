@@ -2,7 +2,7 @@ coverage:
 	@pipenv run coverage xml --fail-under=10
 
 unit:
-	@ASYNC_TEST_TIMEOUT=10 pipenv run pytest --cov=thumbor_custom tests/
+	@ASYNC_TEST_TIMEOUT=10 pipenv run pytest --cov=thumbor_custom_loader tests/
 
 .PHONY: test
 test:
