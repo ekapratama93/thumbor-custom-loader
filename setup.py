@@ -23,7 +23,7 @@ setup(
     keywords="thumbor loader hostname",
     url="https://github.com/ekapratama93/thumbor-custom-single-loader",
     packages=find_packages(include=[
-        'thumbor_custom.loaders.single_loader',
+        'thumbor_custom_loader.loaders.single_loader',
     ]),
     long_description=long_description,
     classifiers=[

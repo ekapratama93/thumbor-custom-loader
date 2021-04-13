@@ -12,7 +12,7 @@ import tornado.web
 from preggy import expect
 from tornado.testing import gen_test
 
-import thumbor_custom.loaders.single_loader as loader
+import thumbor_custom_loader.loaders.single_loader as loader
 from thumbor.config import Config
 from thumbor.context import Context
 from thumbor.loaders import LoaderResult
