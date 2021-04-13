@@ -1,6 +1,6 @@
 # thumbor-custom-single-loader
 
-[![codecov](https://codecov.io/gh/ekapratama93/thumbor-custom-single-loader/branch/main/graph/badge.svg?token=BUFX825X3U)](https://codecov.io/gh/ekapratama93/thumbor-custom-single-loader)
+[![codecov](https://codecov.io/gh/ekapratama93/thumbor-custom-loader/branch/main/graph/badge.svg?token=BUFX825X3U)](https://codecov.io/gh/ekapratama93/thumbor-custom-loader)
 
 Plugin for Thumbor HTTP Loader to replace host from a single source.
 
