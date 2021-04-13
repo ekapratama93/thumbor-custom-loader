@@ -21,7 +21,7 @@ setup(
         "Thumbor custom HTTP loader to replace hosts to a single host"),
     license="MIT",
     keywords="thumbor loader hostname",
-    url="https://github.com/ekapratama93/thumbor-custom-single-loader",
+    url="https://github.com/ekapratama93/thumbor-custom-loader",
     packages=find_packages(include=[
         'thumbor_custom_loader.loaders.single_loader',
     ]),
