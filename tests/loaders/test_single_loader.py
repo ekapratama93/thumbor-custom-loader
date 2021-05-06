@@ -149,8 +149,15 @@ class NormalizeUrlTestCase(TestCase):
 class NormalizeHTTPSchemeTest(TestCase):
     @gen_test
     async def test_should_normalize_http_scheme(self):
-        expect(loader._normalize_http_scheme("https%3A/foo.com")).to_equal("https://foo.com")
-        expect(loader._normalize_http_scheme("http%3A/foo.com")).to_equal("http://foo.com")
+        expect(loader._normalize_http_scheme("https%3A/foo.com")).to_equal(
+            "https://foo.com"
+        )
+        expect(loader._normalize_http_scheme("http%3A/foo.com")).to_equal(
+            "http://foo.com"
+        )
+        expect(loader._normalize_http_scheme("https%3A//foo.com")).to_equal(
+            "https://foo.com"
+        )
 
 
 class HttpsLoaderTestCase(TestCase):
