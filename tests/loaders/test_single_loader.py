@@ -73,6 +73,21 @@ class RewriteUrlTestCase(TestCase):
         )
         expect(loader.rewrite_url(ctx, "http://bar.com/b")).to_equal("http://bar.com/b")
         expect(loader.rewrite_url(ctx, "http://foo.foo/a")).to_equal("http://foo.foo/a")
+        expect(loader.rewrite_url(ctx, "http%3A//bar.com/b")).to_equal(
+            "http://bar.com/b"
+        )
+        expect(loader.rewrite_url(ctx, "http%3A/foo.foo/a")).to_equal(
+            "http://foo.foo/a"
+        )
+
+    @gen_test
+    async def test_multiple_candidates(self):
+        config = Config()
+        config.HTTP_LOADER_HOST_REPLACE_CANDIDATES = "foo.com, foo.id"
+        config.HTTP_LOADER_HOST_REPLACER = "bar.com"
+        ctx = Context(None, config, None)
+        expect(loader.rewrite_url(ctx, "http://foo.com/a")).to_equal("http://bar.com/a")
+        expect(loader.rewrite_url(ctx, "http://foo.id/b")).to_equal("http://bar.com/b")
 
     @gen_test
     async def test_no_config(self):

@@ -42,7 +42,9 @@ def rewrite_url(context, url):
         replacement = context.config.HTTP_LOADER_HOST_REPLACER
 
     if raw_candidate:
-        candidates = raw_candidate.split(",")
+        candidates = [x.strip() for x in raw_candidate.split(",")]
+
+        url = _normalize_url(url)
 
         if replacement:
             res = urlparse(url)
