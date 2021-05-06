@@ -7,11 +7,23 @@
 
 from thumbor.loaders import http_loader
 from urllib.parse import urlparse
+import re
+
+
+def _normalize_http_scheme(url):
+    re_url = re.compile(r"^(https?)[:\/%3a]+", re.IGNORECASE)
+    scheme = re_url.search(url).group(1)
+    stripped_url = re_url.sub("", url).strip().strip("/")
+    return f"{scheme}://{stripped_url}"
 
 
 def _normalize_url(url):
     url = http_loader.quote_url(url)
-    return url if url.startswith("http") else "http://%s" % url
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+    if url.startswith("http"):
+        return _normalize_http_scheme(url)
+    return f"http://{url}"
 
 
 def validate(context, url):
