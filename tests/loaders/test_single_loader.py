@@ -177,9 +177,7 @@ class NormalizeHTTPSchemeTest(TestCase):
 
 class HttpsLoaderTestCase(TestCase):
     def get_app(self):
-        application = tornado.web.Application([(r"/", MainHandler)])
-
-        return application
+        return tornado.web.Application([(r"/", MainHandler)])
 
     @gen_test
     async def test_load(self):
@@ -195,9 +193,7 @@ class HttpsLoaderTestCase(TestCase):
 
 class HttpLoaderWithUserAgentForwardingTestCase(TestCase):
     def get_app(self):
-        application = tornado.web.Application([(r"/", EchoUserAgentHandler)])
-
-        return application
+        return tornado.web.Application([(r"/", EchoUserAgentHandler)])
 
     @gen_test
     async def test_load_with_user_agent(self):
