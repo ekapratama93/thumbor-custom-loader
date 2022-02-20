@@ -15,7 +15,7 @@ def read(fname):
 
 setup(
     name="thumbor_custom_loader",
-    version="0.0.1",
+    version="0.1.0",
     author="ekapratama93",
     description=(
         "Thumbor custom HTTP loader to replace hosts to a single host"),
@@ -37,11 +37,12 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3 :: Only",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Topic :: Multimedia :: Graphics :: Presentation",
     ],
     install_requires=[
-        'thumbor>=7.0.0a5,<8.0.0',
+        'thumbor>=7.0.0,<8.0.0',
     ]
 )
