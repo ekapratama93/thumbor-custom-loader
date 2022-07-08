@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "21ed15741ab6da606199d21a0d37247ac75f6669c908b41032bde9997a8e7efb"
+            "sha256": "44f2cef698a2ffc45ebee06c1c4c9fb678eafa26d3cb9f179df6aab26c870ba7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -126,10 +126,10 @@
         },
         "thumbor": {
             "hashes": [
-                "sha256:72db8ce9d65548a345d464cc7c513bd8ccc96d9f55f07e6df2d5f564d6b211c9"
+                "sha256:cad1b77e24598243cbd79d15f053c4e9e3ea869a2a3ee82a34a1cd7e44ce7e19"
             ],
             "index": "pypi",
-            "version": "==7.0.11"
+            "version": "==7.0.12"
         },
         "thumbor-plugins-gifv": {
             "hashes": [
@@ -609,11 +609,11 @@
         },
         "tomlkit": {
             "hashes": [
-                "sha256:0f4050db66fd445b885778900ce4dd9aea8c90c4721141fde0d6ade893820ef1",
-                "sha256:71ceb10c0eefd8b8f11fe34e8a51ad07812cb1dc3de23247425fbc9ddc47b9dd"
+                "sha256:1c5bebdf19d5051e2e1de6cf70adfc5948d47221f097fcff7a3ffc91e953eaf5",
+                "sha256:61901f81ff4017951119cd0d1ed9b7af31c821d6845c8c477587bbdcd5e5854e"
             ],
             "markers": "python_version >= '3.6' and python_version < '4.0'",
-            "version": "==0.11.0"
+            "version": "==0.11.1"
         },
         "typing-extensions": {
             "hashes": [
