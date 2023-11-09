@@ -15,7 +15,7 @@ mock = "*"
 pyssim = ">=0.4.0,<1.0.0"
 
 [packages]
-thumbor = "==7.5.2"
+thumbor = "==7.7.1"
 
 [requires]
 python_version = "3.8"
